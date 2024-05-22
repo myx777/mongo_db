@@ -37,6 +37,8 @@ services:
   mongo:
     image: mongo
     restart: always
+    volumes: // Добавляем привязку тома для хранения данных MongoDB локально на сервере
+      - ./mongodb_data:/data/db 
     environment:
       MONGO_INITDB_ROOT_USERNAME: root 
       MONGO_INITDB_ROOT_PASSWORD: example 
