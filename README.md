@@ -157,7 +157,7 @@ use library
 и создал нового пользователя
 
 ```
- db.createUser({user:"library", password:"library", roles:[{role: "readWrite", db:"library"}]})
+ db.createUser({user:"library", pwd:"library", roles:[{role: "readWrite", db:"library"}]})
 ```
 </details>
 
